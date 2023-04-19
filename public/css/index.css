@@ -1,3 +1,79 @@
-.main-container {
-   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*----------------------main page------------------------*/
+
+.header {
+    height: 110px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+}
+
+.main {
+    height: calc(80vh - 110px);
+    background-image: url(../imgs/pia24836_perseverance_selfie_at_rochette_figure_3_croppedcloseup.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1 {
+    border-top: calc(((80vh - 110px)/2) - 90px ) solid rgba(0, 0, 0, 0);
+    font-size: 100px;
+}
+
+.text h5 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+header input {
+    background-color: rgb(242, 242, 242);
+    border-bottom: 2px solid gray;
+    padding: 10px 30px;
+    font-weight: 200;
+}
+
+header i {
+    margin-left: -25px;
+    color: gray;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+.right a {
+    background-color: rgb(182, 157, 140);
+    padding: 10px 50px;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
+/*---------------------------latest news------------------------------*/
+
+.latest {
+    background-color: rgb(182, 157, 140);
+    color: white;
 }
