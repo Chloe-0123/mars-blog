@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4a8e03a729.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
 </head>
 
 <body>
@@ -29,23 +31,32 @@
         <div class="main">
             <div class="text">
                 <h1>DARE MIGHTY THINGS.</h1>
-                <h5>From Pathfinder to Ingenuity, and the Future of Planetary Adventure</h5>
+                <h5>From Sojourner to Ingenuity, and the Future of Planetary Adventure</h5>
+                <a href="#latest">Explore</a>
             </div>
 
         </div>
     </section>
-    <section class="latest">
-        <h4>Latest News on Mars: Current Rovers, Orbiters and Future Projects</h4>
+    <section class="latest" id="latest">
+        <div class="latest-title">
+            <h6>LATEST NEWS ON MARS</h6>
+            <h1>_______</h1>
+            <h4>Current Rovers, Orbiters and Future Projects</h4>
+        </div>
         <div class="list">
           <ul class="rows">
             <% for(var i=0; i<posts.length; i++) {%>
-              <li class="articles">
-                <a href="/post/<%= posts[i]._id%>">
-                  <img class="img-fluid" src="<%= posts[i].image%>">
-                </a>
-              </li>
+                <div class="contain">
+                    <li class="articles">
+                        <a href="/post/<%= posts[i]._id%>">
+                          <img class="imgs" src="<%= posts[i].image%>">
+                        </a>
+                        <h2><%= posts[i].title %></h2>
+                    </li>
+                </div>
+             
             <% } %>
-            </ul>
+          </ul>
         </div>
     </section> 
 </body>
