@@ -1,11 +1,38 @@
-<%- include('partials/header') -%>
+
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/profile.css">
+</head>
+
+<section class="top">
+  <header>
+    <div class="header">
+      <div class="left">
+          <label for="search"></label>
+          <input type="text" id="search" name="search" placeholder="Search ...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="centre">
+          <a href="#"><img src="imgs/mars-icon.jpg" alt=""></a>
+          <span>PATHFINDERS</span>
+          
+      </div>
+      <div class="right">
+          <a href="/" class="col-3 btn btn-primary">Home</a>
+          <a href="/logout" class="col-3 btn btn-primary"> Log Out</a>
+      </div>
+  </div>
+  </header>
+
+</section>
+
 <div class="container">
   <div class="row mt-5">
       <div class="col-6">
           <div>
               <p><strong>User Name</strong>: <%= user.userName %></p>
               <p><strong>Email</strong>: <%= user.email %></p>
-              <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+ 
           </div>
           <div class="mt-5">
             <h2>Add a post</h2>
@@ -36,11 +63,8 @@
           </li>
         <% } %>
         </ul>
-        <div class="row justify-content-center mt-5">
-          <a class="btn btn-primary" href="/feed">Return to Feed</a>
-        </div>  
+
       </div>  
     </div>
   </div>
 </div>
-<%- include('partials/footer') -%>

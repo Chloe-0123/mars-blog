@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.box {
+    background-color: rgb(182, 157, 140);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border: 30px solid rgba(0,0,0,0);
+    gap: 20px;
+    border-radius: 8px;
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mb-3 input , button {
+    padding: 3px 10px;
+    border-radius: 10px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+button {
+    background-color: rgba(255, 249, 249, 0.557);
+    
+    
+}
+
+#emailHelp {
+    font-size: 15px;
+    font-weight: 200;
+}
