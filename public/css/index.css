@@ -50,9 +50,11 @@
 
 header input {
     background-color: rgb(242, 242, 242);
+    border: none;
     border-bottom: 2px solid gray;
     padding: 10px 30px;
     font-weight: 200;
+    color: gray;
 }
 
 header i {
@@ -71,6 +73,7 @@ header i {
     color: white;
     font-weight: 200;
     font-size: 15px;
+    text-decoration: none;
 }
 
 .text a {

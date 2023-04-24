@@ -46,6 +46,7 @@
     font-weight: 200;
 }
 
+
 header input {
     background-color: rgb(242, 242, 242);
     border-bottom: 2px solid gray;
@@ -61,6 +62,7 @@ header i {
 .right {
     display: flex;
     gap: 10px;
+    
 }
 
 .right a {
@@ -89,7 +91,6 @@ header i {
     color: rgb(116,76,57);
    
 }
-
 
 .centre span {
     font-family: 'Bungee Hairline', cursive;

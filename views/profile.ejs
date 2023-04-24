@@ -1,70 +1,100 @@
 
 <head>
-  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/profile.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4a8e03a729.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
 </head>
 
-<section class="top">
-  <header>
-    <div class="header">
-      <div class="left">
-          <label for="search"></label>
-          <input type="text" id="search" name="search" placeholder="Search ...">
-          <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <div class="centre">
-          <a href="#"><img src="imgs/mars-icon.jpg" alt=""></a>
-          <span>PATHFINDERS</span>
-          
-      </div>
-      <div class="right">
-          <a href="/" class="col-3 btn btn-primary">Home</a>
-          <a href="/logout" class="col-3 btn btn-primary"> Log Out</a>
-      </div>
-  </div>
-  </header>
-
-</section>
-
-<div class="container">
-  <div class="row mt-5">
-      <div class="col-6">
-          <div>
-              <p><strong>User Name</strong>: <%= user.userName %></p>
-              <p><strong>Email</strong>: <%= user.email %></p>
- 
-          </div>
-          <div class="mt-5">
-            <h2>Add a post</h2>
-            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-              <div class="mb-3">
-                  <label for="title" class="form-label">Title</label>
-                  <input type="text" class="form-control" id="title" name="title">
-              </div>
-              <div class="mb-3">
-                <label for="caption" class="form-label">Caption</label>
-                <textarea class="form-control" id="caption" name="caption"></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="imgUpload" class="form-label">Image</label>
-                <input type="file" class="form-control" id="imageUpload" name="file">
-              </div>
-              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
-            </form>
-          </div>
-      </div>
-      <div class="col-6">
-        <ul class="row list-unstyled">
-        <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
-            <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid" src="<%= posts[i].image%>">
-            </a>
-          </li>
-        <% } %>
-        </ul>
-
-      </div>  
+<body>
+  <section class="top">
+    <header>
+      <div class="header">
+        <div class="left">
+            <label for="search"></label>
+            <input type="text" id="search" name="search" placeholder="Search ...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="centre">
+            <a href="#"><img src="imgs/mars-icon.jpg" alt=""></a>
+            <span>PATHFINDERS</span>
+            
+        </div>
+        <div class="right">
+            <a href="/" class="col-3 btn btn-primary">Home</a>
+            <a href="/logout" class="col-3 btn btn-primary"> Log Out</a>
+        </div>
     </div>
+    </header>
+  
+  </section>
+
+  <div class="profile">
+
+
+        <div class="userInfo">
+            <p>Hello,</p>
+            <p><strong><%= user.userName %></strong></p> 
+            <p class="email"><%= user.email %></p>
+            <div class="tab">
+              <p class="file"><i class="fa-regular fa-folder"></i> <a href="#collection">My Collection</a></p>
+              <p class="new"><i class="fa-regular fa-pen-to-square"></i><a href="#addPost">New Post</a></p>
+            </div>
+            
+        </div>
+        
+
+        <div class="collection" id="collection">
+          <div class="posttitle"><h3>MY POSTS</h3></div>
+          
+          <ul class="row list-unstyled">
+          <% for(var i=0; i<posts.length; i++) {%>
+          
+                <li class="col-6 justify-content-between mt-5">
+                
+                  <a href="/post/<%= posts[i]._id%>">
+                    <img class="img-fluid" src="<%= posts[i].image%>">
+                  </a>
+                
+                
+                  <!--<p class="desc"><%= posts[i].title %></p>-->
+                
+                
+             
+                </li>
+           
+             
+             
+            
+          <% } %>
+          </ul>
+        </div>  
+
+        <div class="addPost" id="addPost">
+          <h2>Add a post</h2>
+          <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" name="title">
+            </div>
+            <div class="mb-3">
+              <label for="caption" class="form-label">Caption</label>
+              <textarea class="form-control" id="caption" name="caption"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="imgUpload" class="form-label">Image</label>
+              <input type="file" class="form-control" id="imageUpload" name="file">
+            </div>
+            <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+          </form>
+        </div>
+
+
   </div>
-</div>
+</body>
+
+

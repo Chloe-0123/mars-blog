@@ -8,10 +8,16 @@
     padding: 0;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    
+}
+
+body {
+    background-image: url('../imgs/465984.jpg');
+    background-size: cover;
 }
 
 .box {
-    background-color: rgb(182, 157, 140);
+    background-color: rgba(182, 157, 140, 0.579);
     width: 500px;
     height: 500px;
     position: absolute;
