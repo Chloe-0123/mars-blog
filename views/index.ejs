@@ -50,12 +50,21 @@
         <div class="list">
           <ul class="rows">
             <% for(var i=0; i<4; i++) {%>
-                <div class="contain">
+                <div class="article-list">
                     <li class="articles">
-                        <a href="/post/<%= posts[i]._id%>">
-                          <img class="imgs" src="<%= posts[i].image%>">
-                        </a>
-                        <h2><%= posts[i].title %></h2>
+                        <div class="article-left">
+                            <a href="/post/<%= posts[i]._id%>">
+                                <img class="imgs" src="<%= posts[i].image%>">
+                              </a>
+                        </div>
+                        <div class="article-right">
+                            <div class="top">
+                                <h2><a href="/post/<%= posts[i]._id%>"><%= posts[i].title %></a></h2>
+                                <h6><%= posts[i].createdAt.toString().split('').slice(0,15).join('')%></h6>
+                            </div>
+                            
+                            <p><%= posts[i].caption.split(' ').slice(0, 50).join(' ')%> ...</p>
+                        </div>
                     </li>
                 </div>
              
