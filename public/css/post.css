@@ -1,0 +1,114 @@
+* {
+    font-weight: 200;
+}
+
+.container {
+    border-left: 30px solid rgba(0, 0, 0, 0);
+    border-right: 30px solid rgba(0, 0, 0, 0);
+}
+
+.content h2 {
+    font-weight: 400;
+    font-size: 45px;
+    border-bottom: 30px solid rgba(0, 0, 0, 0);
+}
+
+.content img {
+    width: 100%;
+}
+
+.forms {
+    width: calc();
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.fa-heart {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+strong {
+    font-weight: 400;
+}
+
+.caption {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.addcomment {
+    margin-top: 80px;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.addcomment h2 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.addcomment form button {
+    padding: 10px 30px;
+    
+}
+
+
+
+.yeah form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.yeah input {
+    margin: 5px 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    outline: none;
+    margin-top: 30px;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.yeah button {
+    margin-top: 20px;
+    background-color: rgb(182, 157, 140);
+    border: none;
+    color: white;
+}
+
+.comment {
+    list-style-type: none;
+    margin-top: 100px;
+}
+
+.comment li {
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 80px;
+    
+    font-size: 30px;
+    padding-left: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.comment h2 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 40px;
+}

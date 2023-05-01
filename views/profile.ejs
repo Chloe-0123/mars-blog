@@ -54,7 +54,7 @@
           <ul class="row list-unstyled">
           <% for(var i=0; i<posts.length; i++) {%>
           
-                <li class="col-6 justify-content-between mt-5">
+                <li>
                 
                   <a href="/post/<%= posts[i]._id%>">
                     <img class="img-fluid" src="<%= posts[i].image%>">
@@ -75,17 +75,17 @@
         </div>  
 
         <div class="addPost" id="addPost">
-          <h2>Add a post</h2>
+          <h2>Add Post</h2>
           <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-            <div class="mb-3">
-                <label for="title" class="form-label">Title</label>
+            <div class="title">
+                <label for="title" class="form-label">Title: </label>
                 <input type="text" class="form-control" id="title" name="title">
             </div>
-            <div class="mb-3">
-              <label for="caption" class="form-label">Caption</label>
+            <div class="title caption">
+              <label for="caption" class="form-label">Caption: </label>
               <textarea class="form-control" id="caption" name="caption"></textarea>
             </div>
-            <div class="mb-3">
+            <div class="imgUpload">
               <label for="imgUpload" class="form-label">Image</label>
               <input type="file" class="form-control" id="imageUpload" name="file">
             </div>
