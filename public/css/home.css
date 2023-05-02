@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*----------------------main page------------------------*/
+
+.header {
+    height: 110px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 50px solid rgba(0, 0, 0, 0);
+    border-right: 50px solid rgba(0, 0, 0, 0);
+}
+
+.main {
+    height: calc(100vh - 110px);
+    background-image: url(../imgs/pia24836_perseverance_selfie_at_rochette_figure_3_croppedcloseup.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1 {
+    border-top: calc(((100vh - 110px)/2) - 90px ) solid rgba(0, 0, 0, 0);
+    font-size: 100px;
+}
+
+.text h5 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+header input {
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-bottom: 2px solid gray;
+    padding: 10px 30px;
+    font-weight: 200;
+    color: gray;
+}
+
+header i {
+    margin-left: -25px;
+    color: gray;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+.right a {
+    background-color: rgb(182, 157, 140);
+    padding: 10px 50px;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.text a {
+    
+   
+    padding: 10px 50px;
+    margin-top: 40px;
+    font-weight: 200;
+    border: 2px solid white;
+}
+
+/*---------------------------latest news------------------------------*/
+
+.latest {
+    text-align: center;
+    border-top: 100px solid rgba(0, 0, 0, 0);
+
+}
+
+.latest h6 {
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.latest h4 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*--------imgs----------*/
+
+li {
+    height: 300px;
+    width: 300px;
+}
+
+.list {
+    border-top: 100px solid rgba(0, 0, 0, 0);
+    border-left: 180px solid rgba(0, 0, 0, 0);
+    border-right: 180px solid rgba(0, 0, 0, 0);
+}
+
+.contain {
+    width: 100%;
+}
+
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+.articles {
+    display: flex;
+    gap: 10px;
+    height: 400px;
+    justify-content: center;
+    width: 100%;
+}
+
+.articles img {
+    height: 100%;
+}
+
+
+.centre {
+    text-align: center;
+    display: flex; 
+    align-items: center;
+    font-size: 40px;
+    font-weight: 200;
+    color: rgb(116,76,57);
+   
+}
+
+
+.centre span {
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 40px;
+}
+.centre img {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+.articles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+
+.list .rows {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.imgs {
+    min-width: 100%;
+   
+}
+  
+.article-right {
+    width: 50%;
+    padding-left: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article-right h2, .article-right h6, .article-right p {
+    text-align: left;
+    font-size: 45px;
+}
+
+.article-right h2 {
+    font-weight: 600;
+}
+
+.article-right h6 {
+    font-size: 18px;
+    font-weight: 200;
+    color: gray;
+}
+
+.article-right p {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.article-left {
+    width: 50%;
+    
+}
+  

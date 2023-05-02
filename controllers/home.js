@@ -13,6 +13,15 @@ module.exports = {
       }
     },
 
+    getPosts: async (req, res) => {
+      try {
+        const posts = await Post.find().sort({ createdAt: "desc" }).lean();
+        res.render("home.ejs", { posts: posts });
+      } catch (err) {
+        console.log(err);
+      }
+    },
+
 
   };
   
