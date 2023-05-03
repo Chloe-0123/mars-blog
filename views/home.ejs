@@ -1,6 +1,6 @@
 <head>
     <title>Main</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/home.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,8 +35,8 @@
         <div class="main">
             <div class="text">
                 <h1>Fresh insights and developments from Mars</h1>
-                <h5>From Sojourner to Ingenuity, and the Future of Planetary Adventure</h5>
-                <a href="#latest">Explore</a>
+                
+                
             </div>
 
         </div>
@@ -49,7 +49,7 @@
         </div>
         <div class="list">
           <ul class="rows">
-            <% for(var i=0; i<4; i++) {%>
+            <% for(var i=0; i<posts.length; i++) {%>
                 <div class="article-list">
                     <li class="articles">
                         <div class="article-left">
